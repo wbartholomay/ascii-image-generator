@@ -12,6 +12,8 @@ import (
 	"github.com/nfnt/resize"
 )
 
+// ConvertImageFileToASCII(string, float) - takes a relative path to an image from the current working directory.
+// Returns the given image converted to ascii, result can be scaled using the second argument.
 func ConvertImageFileToASCII(pathToImage string, sizeMult float64) (string, error) {
 	img, _, err := readImage(pathToImage)
 	if err != nil {
